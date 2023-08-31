@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/codante.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credit Card</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="app">
+    <main>
+      <div id="front-card">
+        <section id="brand">
+          <img src="/codante-dark.png" alt="brand" />
+        </section>
+        <section id="card-number">
+          <span>XXXX-XXXX-XXXX-XXXX</span>
+        </section>
+        <section id="cardholder-and-date">
+          <div id="cardholder">
+            <span id="cardholder-label">Cardholder</span>
+            <span>XXXX XXXX</span>
+          </div>
+          <div id="date">
+            <span>Expires</span>
+            <section>
+              <span id="validation-month">XX</span>/<span id="validation-year">XX</span>
+            </section>
+          </div>
+        </section>
+      </div>
+      <div id="back-card">
+        <section id="magnetic-tape"></section>
+        <section id="cvv">
+          <span>XXX</span>
+        </section>
+        <section id="brand-back">
+          <img src="/codante-dark.png" alt="brand" />
+        </section>
+    </main>
+    <form>
+      <label>Número do cartão:</label>
+      <input id="card-number-input" maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+      <label>Nome impresso no cartão:</label>
+      <input id="cardholder-input" maxlength="20" />
+      <label>Validade:</label>
+      <select id="validation-month-input">
+        <option value="" selected disabled hidden>mm</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select id="validation-year-input">
+        <option value="" selected disabled hidden>yy</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+      </select>
+      <label>Código de verificação:</label>
+      <input id="cvv-input" maxlength="3" />
+    </form>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

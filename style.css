@@ -1,0 +1,106 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 100px;
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: red;
+}
+
+main {
+  background-color: yellow;
+}
+
+#front-card, #back-card {
+  border: 1px solid black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  border-radius: 15px;
+  height: 150px;
+  justify-content: space-between;
+  transition: transform 2s;
+}
+
+#front-card {
+  background-image: linear-gradient(to right, rgb(3 7 18 / 70%), rgb(3 7 18));
+}
+
+#back-card {
+  background-image: linear-gradient(to right, rgb(3 7 18), rgb(3 7 18 / 70%));
+  display: none;
+}
+
+#brand {
+  align-self: flex-end;
+  padding: 10px 10px 0 0;
+}
+
+img {
+  width: 40px;
+}
+
+#card-number {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 80%;
+  margin-inline: 8px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding-block: 5px;
+}
+
+#cardholder-and-date {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 10px;
+}
+
+#cardholder, #date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+#cardholder {
+  align-items: flex-start;
+}
+
+#magnetic-tape {
+  background-color: darkgray;
+  margin-top: 15px;
+  width: 100%;
+  height: 38px;
+}
+
+#cvv {
+  border: 1px solid red;
+  border-radius: 8px;
+  align-self: flex-end;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+#brand-back {
+  align-self: flex-start;
+  padding: 0 0 10px 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
