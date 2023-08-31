@@ -2,7 +2,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   gap: 100px;
   height: 100vh;
-  background-color: blue;
+  background-color: #030712;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,12 +12,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  background-color: red;
-}
-
-main {
-  background-color: yellow;
+  gap: 80px;
+  background-color: #f9fafb;
+  padding: 80px;
+  border-radius: 15px;
 }
 
 #front-card, #back-card {
@@ -33,11 +31,11 @@ main {
 }
 
 #front-card {
-  background-image: linear-gradient(to right, rgb(3 7 18 / 70%), rgb(3 7 18));
+  background-image: linear-gradient(to right, rgb(89 89 89), rgb(3 7 18));
 }
 
 #back-card {
-  background-image: linear-gradient(to right, rgb(3 7 18), rgb(3 7 18 / 70%));
+  background-image: linear-gradient(to right, rgb(3 7 18), rgb(89 89 89));
   display: none;
 }
 
@@ -51,7 +49,7 @@ img {
 }
 
 #card-number {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 8px;
   width: 80%;
   margin-inline: 8px;
@@ -103,4 +101,34 @@ img {
 form {
   display: flex;
   flex-direction: column;
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f3f4f6;
+  margin-block: 5px;
+}
+
+.input-date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  background-color: #f3f4f6;
+  margin-block: 5px;
+}
+
+
+label {
+  color: #0a0a0a;
+  font-size: 12px;
 }
